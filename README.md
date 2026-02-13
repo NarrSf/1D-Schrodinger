@@ -2,16 +2,13 @@
 
 A professional Python-based simulation to solve and visualize the **Time-Independent Schrödinger Equation (TISE)** for various quantum potential wells using the **Finite Difference Method**.
 
-![Simulation Result](Figure_1.png) 
-*(Note: Replace this with your actual output image after uploading it to your repo)*
-
-## 📖 Overview
+## Overview
 
 This project provides a numerical solution to the fundamental equation of quantum mechanics in one dimension:
 $$\hat{H}\psi(x) = E\psi(x)$$
 By transforming the differential Hamiltonian operator into a discrete matrix, we can compute the quantized energy levels ($E_n$) and the corresponding probability amplitudes ($\psi_n$) for particles trapped in different potentials.
 
-## ✨ Key Features
+## Key Features
 
 * **Numerical Engine:** Efficiently solves the eigenvalue problem using `scipy.linalg.eigh`.
 * **Physics Visualization:** * Plots wavefunctions ($\psi$) directly on their corresponding energy levels.
@@ -22,7 +19,7 @@ By transforming the differential Hamiltonian operator into a discrete matrix, we
     * Infinite/Finite Square Wells
     * Custom Anharmonic Potentials
 
-## 🧠 How It Works (Technical Breakdown)
+## How It Works (Technical Breakdown)
 
 ### 1. Spatial Discretization
 The continuous 1D space is mapped onto a discrete grid of $N$ points. 
@@ -37,9 +34,3 @@ The solver represents physical operators as square matrices:
 ### 3. Solving the Physics
 The script finds the **Eigenvalues** (allowed energies) and **Eigenvectors** (wavefunctions) of the $H$ matrix. To make the results intuitive, wavefunctions are scaled and vertically offset by their respective energy levels in the final plot.
 
-## 🛠️ Installation & Usage
-
-### Prerequisites
-Make sure you have Python 3.8+ installed along with the following libraries:
-```bash
-pip install numpy scipy matplotlib
