@@ -11,7 +11,7 @@ By transforming the differential Hamiltonian operator into a discrete matrix, we
 ## Key Features
 
 * **Numerical Engine:** Efficiently solves the eigenvalue problem using `scipy.linalg.eigh`.
-* **Physics Visualization:** * Plots wavefunctions ($\psi$) directly on their corresponding energy levels.
+* **Physics Visualization:** Plots wavefunctions ($\psi$) directly on their corresponding energy levels.
     * Demonstrates **Zero-Point Energy** (non-zero ground state).
     * Visualizes **Quantum Tunneling** into classically forbidden regions.
 * **Modular Design:** Supports various potentials including:
